@@ -1,0 +1,71 @@
+.body{
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.body img{
+    padding-top: 4rem;
+    width: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+h1{
+    color: white;
+    font-weight: 800;
+    font-size: 2.5rem;
+
+}
+
+button{
+    width: 30%;
+    color: white;
+    background-color: rgb(163, 0, 0);
+    border: none;
+    cursor: pointer;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 1.5rem;
+    transition: 1s ease;
+}
+
+button:hover{
+    transition: 1s ease;
+    scale: 1.05;
+}
+
+.remove{
+    display: none;
+}
+
+.newBody{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: red;
+    background-color: white;
+    background-image: url("bg.png");
+    background-size: cover;
+    background-repeat: repeat;
+    animation: moveIt 10s linear infinite;
+}
+
+h2{
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.slide{
+    width: 30rem;
+}
+
+@keyframes moveIt {
+    from{background-position: top;}
+    to{background-position: bottom;}
+}
